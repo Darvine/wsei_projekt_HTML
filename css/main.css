@@ -6,6 +6,25 @@ body {
     font-family: 'ProximaNova','Segoe UI','Helvetica Neue',Helvetica,Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans',sans-serif;
     font-weight: 400;
 }
+section.contracts {
+    /*background-image: url('../assets/Zlecenia.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    width: 1680px;
+    height: 1080px;
+    position: relative;
+}
+.contract {
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+    background-image: url('../assets/Old_paper.png');
+    padding: 25px;
+    color: black;
+}
 
 * {
     box-sizing: border-box;
@@ -210,12 +229,23 @@ p.book-desc{
     text-align: justify;
     font-size: .9em;
 }
+p.game-desc{
+    text-align: justify;
+    font-size: .9em;
+}
+
 .book-front {
     margin: 0 auto;
     width: 250px;
     height: auto;
    /* border: 1px solid white;*/
 }
+.game-front {
+    margin: 0 auto;
+    width: 250px;
+    height: auto;
+}
+
 .monster img {
     width: 60%;
 }
@@ -240,7 +270,9 @@ p.book-desc{
     background-color: black;
     color: red;
 }
-
+span.first_word {
+    color: red;
+}
 @media(max-width: 1200px) {
    /* ul.menu {
         width: 80%;
