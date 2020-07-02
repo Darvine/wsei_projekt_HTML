@@ -1,29 +1,10 @@
 body {
     margin: 0;
     color: #ffffff;
-    background: url('../assets/bg-media.7.jpg') #000000 no-repeat;
+    background: url('../assets/images/bg-media.7.jpg') #000000 no-repeat;
     font: 15px / 1.4 sans-serif;
-    font-family: 'ProximaNova','Segoe UI','Helvetica Neue',Helvetica,Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans',sans-serif;
+    font-family: 'ProximaNova', 'Segoe UI', 'Helvetica Neue', Helvetica, Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', sans-serif;
     font-weight: 400;
-}
-section.contracts {
-    /*background-image: url('../assets/Zlecenia.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;*/
-    width: 1680px;
-    height: 1080px;
-    position: relative;
-}
-.contract {
-    position: absolute;
-    top: 100px;
-    left: 120px;
-    background-size: cover;
-    width: 200px;
-    height: 300px;
-    background-image: url('../assets/Old_paper.png');
-    padding: 25px;
-    color: black;
 }
 
 * {
@@ -39,8 +20,12 @@ h1 {
     text-transform: uppercase;
 }
 
-ul,li {
-   list-style-type: none;
+h1.red {
+    color: #e71a27;
+}
+
+ul, li {
+    list-style-type: none;
     padding: 0;
     margin: 0;
 }
@@ -64,7 +49,10 @@ ul,li {
     height: auto;
     width: 100%;
     max-width: 1024px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
+
 ul.menu {
     width: 100%;
     margin: 0 auto;
@@ -72,20 +60,22 @@ ul.menu {
     padding: 0;
     overflow: hidden;
 }
+
 ul.menu > li {
     margin: 10px;
     width: calc(25% - 20px);
     padding: 0;
-    background-color: rgba(43,43,52,1);
+    background-color: rgba(43, 43, 52, 1);
     border-radius: 5px;
     display: block;
     float: left;
 }
 
 ul.menu > li:hover {
-    background-color: rgba(43,43,52,1);
+    background-color: rgba(43, 43, 52, 1);
     transition: background .4s;
 }
+
 ul.menu > li a {
     position: relative;
     height: 76px;
@@ -112,22 +102,23 @@ ul.menu > li a svg {
 }
 
 ul.menu > li a:hover svg {
-    background-color: rgba(43,43,52,1);
+    background-color: rgba(43, 43, 52, 1);
 }
 
 ul.menu > li a.active svg {
     background-color: #a5abaf;
 }
 
-ul.menu > li a svg path{
-    fill: rgba(43,43,52,1);
+ul.menu > li a svg path {
+    fill: rgba(43, 43, 52, 1);
     transition: fill .5s;
 }
 
-ul.menu > li a:hover svg path{
+ul.menu > li a:hover svg path {
     fill: #e71a27;
 }
-ul.menu > li a.active svg path{
+
+ul.menu > li a.active svg path {
     fill: #e71a27;
 }
 
@@ -145,18 +136,19 @@ ul.menu > li a span {
 ul.menu > li a span:hover {
     color: #ffffff;
 }
+
 ul.menu > li a.active span {
     color: #2b2b34;
     background-color: #a5abaf;
 }
+
 span style {
     font-family: "Comic Sans MS", fantasy;
-
 }
 
 
 footer {
-    border-top: 1px solid rgba(165,165,165,0.9);
+    border-top: 1px solid rgba(165, 165, 165, 0.9);
     margin: 10px;
     text-align: center;
 }
@@ -180,7 +172,12 @@ ul.footer-menu li {
 
 ul.footer-menu li a {
     font-size: .9em;
-    color: rgba(225,225,225,0.9);
+    color: rgba(225, 225, 225, 0.9);
+}
+
+.center-txtblock {
+    margin: 0 auto;
+    width: 80%;
 }
 
 .m-t-2 {
@@ -213,23 +210,24 @@ ul.footer-menu li a {
     cursor: pointer;
 }
 
-.grid.gallery .block img{
+.grid.gallery .block img {
     width: 100%;
 }
 
-.grid.col-2 .block{
+.grid.col-2 .block {
     width: calc(50% - 40px);
 }
 
-.grid.col-3 .block{
+.grid.col-3 .block {
     width: calc(33% - 40px);
 }
 
-p.book-desc{
+p.book-desc {
     text-align: justify;
     font-size: .9em;
 }
-p.game-desc{
+
+p.game-desc {
     text-align: justify;
     font-size: .9em;
 }
@@ -238,8 +236,8 @@ p.game-desc{
     margin: 0 auto;
     width: 250px;
     height: auto;
-   /* border: 1px solid white;*/
 }
+
 .game-front {
     margin: 0 auto;
     width: 250px;
@@ -256,6 +254,7 @@ p.game-desc{
     background-color: #52050e;
     display: inline-block;
 }
+
 .weakness {
     border: 1px solid red;
     width: auto;
@@ -270,13 +269,162 @@ p.game-desc{
     background-color: black;
     color: red;
 }
+
 span.first_word {
-    color: red;
+    color: #e71a27;
 }
-@media(max-width: 1200px) {
-   /* ul.menu {
-        width: 80%;
-    }*/
+
+section.contracts {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+section.contracts > div {
+    flex: 0 0 60%;
+    padding: 0 20px 20px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
+}
+
+section.contracts .add {
+    flex: 0 0 20%;
+    height: max-content;
+}
+
+section.contracts .add textarea {
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+}
+
+.contract {
+    padding: 5px;
+    border: 1px solid transparent;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contract:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contract.template {
+    display: none !important;
+}
+
+.contract > div {
+    flex: 1 0 300px;
+}
+
+
+.contract.accepted .info .icon {
+    color: white;
+}
+
+.contract.finished .info .icon {
+    color: rgba(225, 225, 225, 0.32);
+}
+
+.contract:hover {
+    border: 1px solid white;
+}
+
+.contract .info {
+    min-height: 56px;
+}
+
+.contract .info .icon {
+    display: inline-block;
+    width: 5%;
+    font-size: 40px;
+    color: yellow;
+}
+
+.contract .info .title {
+    display: inline-block;
+    width: 90%;
+    vertical-align: super;
+    color: yellow;;
+}
+
+.contract.accepted .info .title {
+    color: white;
+}
+
+.contract.finished .info .title {
+    color: rgba(225, 225, 225, 0.32);
+}
+
+.contract .buttons {
+    line-height: 50px;
+    text-align: right;
+    flex: 0 0 200px;
+}
+
+.btn {
+    color: white;
+    background-color: #34343e;
+    border: 1px solid #000000;;
+    padding: 8px 8px 10px 10px;
+    vertical-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2b2b34;
+
+}
+
+.btn.centered {
+    margin: 0 auto;
+    display: block;
+}
+
+.btn.smooth {
+    border-radius: 5px;
+}
+
+.btn.fluid {
+    width: 100%;
+}
+
+.btn.mini {
+    padding: 4px 4px 5px 5px;
+    vertical-align: center;
+    font-size: 14px;
+}
+
+.btn.red {
+    background-color: #e71a27;
+}
+
+.btn.red:hover {
+    background-color: #9c161e;
+}
+
+.btn.green {
+    background-color: #19b819;
+}
+
+.btn.green:hover {
+    background-color: #138913;
+}
+
+.btn.blue {
+    background-color: #1d86ec;
+}
+
+.btn.blue:hover {
+    background-color: #1d72c6;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@media (max-width: 1200px) {
     ul.menu > li {
         width: calc(50% - 20px);
     }
@@ -284,9 +432,13 @@ span.first_word {
     .grid .block {
         width: calc(50% - 40px) !important;
     }
+
+    section.contracts > div {
+        flex: 0 0 100% !important;
+    }
 }
 
-@media(max-width: 760px) {
+@media (max-width: 760px) {
     ul.menu > li {
         width: calc(100% - 20px);
     }
@@ -294,8 +446,23 @@ span.first_word {
     .grid .block {
         width: calc(100%) !important;
     }
-/*
-    ul.menu {
-        width: 80%;
-    }*/
+
+    .content {
+        padding: 10px 0 0 0;
+    }
+}
+
+@media (max-width: 570px) {
+    .contract .buttons {
+        flex: 0 0 100%;
+    }
+
+    .contract .buttons button {
+        width: 100%;
+        display: block;
+    }
+
+    ul.footer-menu li {
+        display: block;
+    }
 }
